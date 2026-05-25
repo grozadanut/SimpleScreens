@@ -44,6 +44,7 @@ along with this software (see the LICENSE.md file). If not, see
         <service-call name="org.moqui.impl.UserServices.send#ExternalAuthcCode" in-map="[factorId:factorId]"/>
         <default-response url="."/>
     </transition>
+    <transition-include name="trustedDeviceSubmit" location="component://tools/screen/System/Security/UserAccount/UserAccountDetail/TrustedDevices.xml"/>
 
     <subscreens>
         <subscreens-item name="VerifyEmail" location="component://tools/screen/System/Security/UserAccount/UserAccountDetail/VerifyEmail.xml"/>
@@ -221,6 +222,7 @@ along with this software (see the LICENSE.md file). If not, see
                         </form-list>
                     </box-body-nopad>
                 </container-box>
+                <include-screen location="component://tools/screen/System/Security/UserAccount/UserAccountDetail/TrustedDevices.xml"/>
 
             </panel-center>
         </container-panel>
