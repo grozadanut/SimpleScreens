@@ -45,6 +45,7 @@ along with this software (see the LICENSE.md file). If not, see
         <default-response url="."/>
     </transition>
     <transition-include name="trustedDeviceSubmit" location="component://tools/screen/System/Security/UserAccount/UserAccountDetail/TrustedDevices.xml"/>
+    <transition name="visitDetail"><default-response url="../../../system/Visit/VisitDetail"/></transition>
 
     <subscreens>
         <subscreens-item name="VerifyEmail" location="component://tools/screen/System/Security/UserAccount/UserAccountDetail/VerifyEmail.xml"/>
